@@ -1,0 +1,109 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f0ebf8; font-family: 'Google Sans', Arial, sans-serif; }
+  .page { background: #f0ebf8; padding: 20px 0 40px; min-height: 100vh; }
+  .topbar { background: #fff; height: 64px; display: flex; align-items: center; padding: 0 24px; border-bottom: 1px solid #e0e0e0; margin-bottom: 0; }
+  .topbar-title { font-size: 18px; color: #202124; margin-left: 12px; font-weight: 400; }
+  .dots { display: flex; gap: 4px; margin-left: auto; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #9e9e9e; }
+  .form-wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+  .header-card { background: #fff; border-radius: 8px 8px 0 0; border-top: 10px solid #673ab7; padding: 24px 24px 20px; margin-bottom: 0; }
+  .form-title { font-size: 26px; font-weight: 400; color: #202124; margin-bottom: 8px; }
+  .form-desc { font-size: 14px; color: #444746; line-height: 1.5; }
+  .required-note { font-size: 13px; color: #c62828; margin-top: 12px; }
+  .q-card { background: #fff; border-radius: 8px; padding: 24px; margin-top: 12px; border: 1px solid #e0e0e0; }
+  .q-text { font-size: 15px; color: #202124; margin-bottom: 16px; line-height: 1.5; }
+  .req { color: #c62828; margin-left: 2px; }
+  .option-row { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
+  .radio { width: 18px; height: 18px; border-radius: 50%; border: 2px solid #757575; flex-shrink: 0; }
+  .radio.checked { border-color: #673ab7; background: #673ab7; position: relative; }
+  .radio.checked::after { content: ''; position: absolute; top: 3px; left: 3px; width: 6px; height: 6px; border-radius: 50%; background: #fff; }
+  .checkbox-box { width: 18px; height: 18px; border-radius: 2px; border: 2px solid #757575; flex-shrink: 0; }
+  .opt-label { font-size: 14px; color: #202124; }
+  .dropdown { width: 100%; padding: 8px 0; border: none; border-bottom: 1px solid #757575; font-size: 14px; color: #202124; background: transparent; outline: none; }
+  .short-ans { width: 100%; border: none; border-bottom: 1px solid #757575; padding: 6px 0; font-size: 14px; color: #202124; outline: none; background: transparent; }
+  .short-ans::placeholder { color: #aaa; }
+  .submit-row { margin-top: 20px; display: flex; align-items: center; gap: 16px; }
+  .submit-btn { background: #673ab7; color: #fff; border: none; border-radius: 4px; padding: 10px 28px; font-size: 14px; font-weight: 500; cursor: pointer; }
+  .clear-btn { background: none; border: none; color: #673ab7; font-size: 14px; cursor: pointer; }
+  .q-num { font-size: 12px; color: #9e9e9e; margin-bottom: 6px; }
+  .divider { height: 1px; background: #e0e0e0; margin: 14px 0; }
+  .topbar-logo { width: 32px; height: 32px; }
+</style>
+<div class="page">
+  <div class="topbar">
+    <svg class="topbar-logo" viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="4" fill="#fff"/>
+      <rect x="6" y="6" width="20" height="20" rx="2" fill="#673ab7" opacity="0.15"/>
+      <rect x="10" y="10" width="12" height="3" rx="1" fill="#673ab7"/>
+      <rect x="10" y="15" width="12" height="3" rx="1" fill="#673ab7" opacity="0.7"/>
+      <rect x="10" y="20" width="7" height="3" rx="1" fill="#673ab7" opacity="0.4"/>
+    </svg>
+    <span class="topbar-title">Digital Literacy Awareness Quiz</span>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+
+  <div class="form-wrap" style="margin-top: 24px;">
+    <div class="header-card">
+      <div class="form-title">Digital Literacy Awareness Quiz</div>
+      <div class="form-desc">This quiz is designed to test your awareness of digital literacy, online safety, and responsible use of technology. Created as part of CSE0001 – Digital Literacy | VIT Bhopal University.</div>
+      <div class="required-note">* Required</div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-num">Question 1 of 5</div>
+      <div class="q-text">Which of the following is the safest password practice? <span class="req">*</span></div>
+      <div class="option-row"><div class="radio"></div><span class="opt-label">Using your name and date of birth</span></div>
+      <div class="option-row"><div class="radio checked"></div><span class="opt-label">Using a mix of letters, numbers and symbols</span></div>
+      <div class="option-row"><div class="radio"></div><span class="opt-label">Using the same password for all accounts</span></div>
+      <div class="option-row"><div class="radio"></div><span class="opt-label">Sharing your password with trusted friends</span></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-num">Question 2 of 5</div>
+      <div class="q-text">What is phishing? <span class="req">*</span></div>
+      <div class="option-row"><div class="radio"></div><span class="opt-label">A type of malware that encrypts your files</span></div>
+      <div class="option-row"><div class="radio"></div><span class="opt-label">A technique to speed up internet browsing</span></div>
+      <div class="option-row"><div class="radio checked"></div><span class="opt-label">A scam to steal personal information via fake emails or links</span></div>
+      <div class="option-row"><div class="radio"></div><span class="opt-label">An antivirus scanning method</span></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-num">Question 3 of 5</div>
+      <div class="q-text">Which browser practice is considered safest? <span class="req">*</span></div>
+      <select class="dropdown">
+        <option>Choose</option>
+        <option selected>Using HTTPS websites and avoiding unknown links</option>
+        <option>Saving all passwords in the browser</option>
+        <option>Clicking pop-up offers for free gifts</option>
+      </select>
+    </div>
+
+    <div class="q-card">
+      <div class="q-num">Question 4 of 5</div>
+      <div class="q-text">Which of the following are useful digital tools for students? (Select all that apply) <span class="req">*</span></div>
+      <div class="option-row"><div class="checkbox-box" style="background:#673ab7; border-color:#673ab7; display:flex;align-items:center;justify-content:center;"><svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l3 3 5-6" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div><span class="opt-label">GitHub</span></div>
+      <div class="option-row"><div class="checkbox-box" style="background:#673ab7; border-color:#673ab7; display:flex;align-items:center;justify-content:center;"><svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l3 3 5-6" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div><span class="opt-label">Google Workspace (Docs, Sheets, Forms)</span></div>
+      <div class="option-row"><div class="checkbox-box"></div><span class="opt-label">Random browser extensions</span></div>
+      <div class="option-row"><div class="checkbox-box" style="background:#673ab7; border-color:#673ab7; display:flex;align-items:center;justify-content:center;"><svg width="10" height="8" viewBox="0 0 10 8"><path d="M1 4l3 3 5-6" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div><span class="opt-label">LinkedIn</span></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-num">Question 5 of 5</div>
+      <div class="q-text">Describe one digital safety habit you personally follow in your daily life. <span class="req">*</span></div>
+      <input class="short-ans" type="text" placeholder="Your answer" value="I enable two-factor authentication on all my accounts including email and UPI apps."/>
+      <div class="divider"></div>
+      <div style="font-size: 12px; color: #9e9e9e;">Short answer text</div>
+    </div>
+
+    <div class="submit-row">
+      <button class="submit-btn">Submit</button>
+      <button class="clear-btn">Clear form</button>
+    </div>
+
+    <div style="font-size: 12px; color: #9e9e9e; margin-top: 24px; text-align: center;">
+      This content is created by Paras Dwivedi — CSE0001 Digital Literacy, VIT Bhopal University
+    </div>
+  </div>
+</div>
